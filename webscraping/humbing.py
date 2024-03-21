@@ -8,7 +8,7 @@ processor = AutoImageProcessor.from_pretrained("joseluhf11/sign_language_classif
 model = AutoModelForImageClassification.from_pretrained("joseluhf11/sign_language_classification_v1")
 from PIL import Image
 
-image = Image.open("/content/letra_A.jpg")
+image = Image.open("imagenes/letra_A.jpg")
 
 inputs = processor(images=image, return_tensors="pt")
 
